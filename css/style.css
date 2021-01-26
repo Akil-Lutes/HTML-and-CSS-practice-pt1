@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /*this is saying you can never be bigger than your parent*/
+  /*   border:1px solid grey; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 1000px;
+  line-height: 2;
+  font-size: 1.5rem;
+  background-color: #4a0202;
+}
+
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=714&q=80/");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 3px;
+  padding: 4% 0;
+}
+/*# sourceMappingURL=style.css.map */

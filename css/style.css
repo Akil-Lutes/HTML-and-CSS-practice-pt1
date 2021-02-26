@@ -16,6 +16,11 @@ body {
   line-height: 2;
   font-size: 1.5rem;
   background-color: #4a0202;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* no scrollbars shown by default */
+  margin: 0;
 }
 
 .hero-img {
@@ -42,5 +47,39 @@ h1, h2, h3, h4 {
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 3px;
   padding: 4% 0;
+}
+
+.food-cards {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  /* When panels are active, h3 titles will appear */
+  opacity: 0;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,28 @@
-// Sass Variables
-$font-stack: Arial, Helvetica, sans-serif;
-$light-color: #f4f4f4;
+$theme-colors: (
+    "primary": #7540b9,
+    "danger": #ff4136
+);
+
+// Create my own map
+$custom-colors: (
+  "custom-color": #900
+);
+
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+// body {
+//     background-color: $primary;
+// };
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// // Sass Variables
+// $font-stack: Arial, Helvetica, sans-serif;
+// $light-color: #f4f4f4;
 
 
 * {
